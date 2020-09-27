@@ -1,15 +1,21 @@
 from gui_window import GuiWindow
+from function.file_handling import FileHandling
+import sys
 
 
 def main():
-    brightness_pass = '/sys/class/backlight/intel_backlight/actual_brightness'
-    with open(brightness_pass) as f:
-        s = f.read()
+    # loading current brightness value
+    file_handling = FileHandling()
+    current_brightness = file_handling.load_actual_brightness()
 
-    print("Now brightness is " + s)
-
+    # creating GUI window
     gui_window_class = GuiWindow()
-    print("set brightness: " + str(gui_window_class.creat_gui_window(s)))
+    update_brightness = str(gui_window_class.creat_gui_window(current_brightness))
+
+    # writing new brightness value
+    file_handling.write_brightness(update_brightness)
+
+    sys.exit(0)
 
 
 if __name__ == '__main__':
