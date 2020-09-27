@@ -22,7 +22,8 @@ class GuiWindow(tk.Frame):
             orient="horizontal",
             variable=GuiWindow.var,
             from_=50,
-            to=500
+            to=500,
+            length=500
         )
         scale.pack()
 
