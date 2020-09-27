@@ -20,14 +20,9 @@ class GuiWindow(tk.Frame):
         scale = tk.Scale(
             master=self.root,
             orient="horizontal",
-            variable=GuiWindow.var,
-            command=self.update_brightness
+            variable=GuiWindow.var
         )
         scale.pack()
-
-    @staticmethod
-    def update_brightness(*args):
-        print(GuiWindow.var.get())
 
     def quit_button(self):
         button = tk.Button(
