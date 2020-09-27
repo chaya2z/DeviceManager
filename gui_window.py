@@ -1,14 +1,14 @@
 import tkinter as tk
 
 
-class GuiWindow(tk.Frame):
+class GuiWindow:
     root = tk.Tk()
     var = tk.IntVar(
-        master=root,
-        value=340
+        master=root
     )
 
-    def creat_gui_window(self):
+    def creat_gui_window(self, current_value):
+        GuiWindow.var.set(current_value)
         self.root.title("Device Manager")
         self.scale_widget()
         self.quit_button()
