@@ -21,7 +21,7 @@ Choose one method you like.
 # HTTPS
 git clone https://github.com/chaya2z/DeviceManager.git
 
-# SSh
+# SSH
 git clone git@github.com:chaya2z/DeviceManager.git
 
 # GitHub CLI
