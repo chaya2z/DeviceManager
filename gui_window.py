@@ -20,7 +20,9 @@ class GuiWindow(tk.Frame):
         scale = tk.Scale(
             master=self.root,
             orient="horizontal",
-            variable=GuiWindow.var
+            variable=GuiWindow.var,
+            from_=50,
+            to=500
         )
         scale.pack()
 
