@@ -59,6 +59,35 @@ cd DeviceManager
 sudo python3 script.py
 ```
 
+## Option
+
+Default scale-bar value: min 50, max 500. If you want to change them, please configure the following parts.
+
+**warning:**
+setting value of `to` at 0, your screen is pitch-dark.
+
+`gui_window.py`
+
+```python
+# gui_window.py
+# line: 34 ~
+
+        scale = tk.Scale(
+            master=self.root,
+            orient="horizontal",
+            variable=GuiWindow.var,
+            from_=50, # setting your like value of min brightness
+            to=500, # setting your like value of max brightness
+            length=500
+        )
+```
+
+Confirm your device max brightness,
+
+```shell script
+cat /sys/class/backlight/intel_backlight/max_brightness
+```
+
 ## License
 
 This software is licensed under the MIT License.
