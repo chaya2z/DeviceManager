@@ -1,8 +1,8 @@
 # DeviceManager
 
-[![issues](https://img.shields.io/github/issues/chaya2z/chaya2z-blog)](https://github.com/chaya2z/chaya2z-blog/issues)
-[![pull request](https://img.shields.io/github/issues-pr/chaya2z/chaya2z-blog)](https://github.com/chaya2z/chaya2z-blog/pulls)
-[![License](https://img.shields.io/github/license/chaya2z/chaya2z-blog)](LICENSE)
+[![issues](https://img.shields.io/github/issues/chaya2z/DeviceManager)](https://github.com/chaya2z/DeviceManager/issues)
+[![pull request](https://img.shields.io/github/issues-pr/chaya2z/DeviceManager)](https://github.com/chaya2z/DeviceManager/pulls)
+[![License](https://img.shields.io/github/license/chaya2z/DeviceManager)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-v3.8-blue)
 
 Setting screen brightness application.
