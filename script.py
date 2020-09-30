@@ -1,9 +1,12 @@
 from gui_window import GuiWindow
 from function.file_handling import FileHandling
+from function.permission_handling import PermissionHandler
 import sys
 
 
 def main():
+    PermissionHandler.permission_error_handler()
+
     # loading current brightness value
     file_handling = FileHandling()
     current_brightness = file_handling.load_actual_brightness()
