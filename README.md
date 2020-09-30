@@ -64,7 +64,7 @@ sudo python3 script.py
 Default scale-bar value: min 50, max 500. If you want to change them, please configure the following parts.
 
 **warning:**
-setting value of `to` at 0, your screen is pitch-dark.
+setting value of `from_` at 0, your screen is pitch-dark.
 
 `gui_window.py`
 
